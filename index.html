@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Engenharia de Software</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #000000;
-            margin: 40px;
-        }
-        a {
-            color: #0000ee;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engenharia de Software – Materiais</title>
+  <style>
+    :root {
+      --fg: #000; --bg: #fff; --muted: #6b7280; --line: #e5e7eb;
+    }
+    html, body { background: var(--bg); color: var(--fg); font-family: Arial, Helvetica, sans-serif; }
+    .wrap { max-width: 980px; margin: 48px auto; padding: 0 20px; }
+    h1 { font-size: 38px; margin: 0 0 8px; font-weight: 700; }
+    p.lead { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 18px; }
+    .card { border: 1px solid var(--line); border-radius: 10px; padding: 16px; text-decoration: none; color: inherit; transition: box-shadow .15s ease, transform .05s ease; }
+    .card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.08); transform: translateY(-1px); }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; font-size: 14px; color: var(--muted); }
+    .section { margin: 34px 0; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
+    .foot { font-size: 13px; color: var(--muted); text-align: center; margin-top: 40px; }
+    .tag { display: inline-block; font-size: 11px; padding: 2px 6px; border:1px solid var(--line); border-radius: 999px; color:#111; }
+    .list { list-style: none; padding: 0; margin: 8px 0 0; }
+    .list li { margin: 6px 0; }
+    code { background:#f5f5f5; padding:2px 6px; border-radius:6px; }
+  </style>
 </head>
 <body>
+  <main class="wrap">
+    <header>
+      <h1>Engenharia de Software – Materiais</h1>
+      <p class="lead">Hub central da disciplina. Links rápidos para aulas, docs, exercícios e templates.</p>
+    </header>
 
-    <h1>Engenharia de Software</h1>
+    <section class="section">
+      <h2>Aulas</h2>
+      <div class="grid">
+        <!-- Substitua os href abaixo pelos caminhos reais publicados no Pages -->
+        <a class="card" href="aulas/aula1.html"><h3>Aula 01</h3><p>Introdução, ciclos de vida, GitHub básico.</p></a>
+        <a class="card" href="aulas/aula2.html"><h3>Aula 02</h3><p>Introdução ao PlantUML no Visual Studio Code.</p></a>
+        <a class="card" href="aulas/aula3.html"><h3>Aula 03</h3><p>Requisitos, casos de uso, fluxos.</p></a>
+      </div>
+      
+    </section>
 
-    <p>
-        Acesse o material da disciplina:
-        <a href="docs/"> Abrir pasta de materiais</a>
-    </p>
+    <hr />
 
+    <section class="section">
+      <h2>Documentos e Modelos</h2>
+      <div class="grid">
+        <a class="card" href="templates_exemplos"><h3>Docs</h3><p>Templates e Exemplos para usar e melhorar.</p></a>
+      </div>
+      
+    </section>
+
+    <hr />
+
+    <section class="section">
+      <h2>Exercícios e Projetos</h2>
+      <div class="grid">
+        <a class="card" href="exercicios/index.html"><h3>Exercícios</h3><p>Listas e atividades práticas semanais.</p></a>
+        <a class="card" href="projetos/index.html"><h3>Projeto Integrado</h3><p>Guia, critérios e entregas.</p></a>
+        <a class="card" href="design/index.html"><h3>Design & Diagramas</h3><p>UML, fluxos, protótipos.</p></a>
+      </div>
+    </section>
+
+    <hr />
+
+
+
+    <p class="foot">Professor: Max Streicher Vallim • UNIFEOB • 2026.1</p>
+  </main>
 </body>
 </html>
